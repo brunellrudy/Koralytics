@@ -2,16 +2,18 @@
   "name": "diaspora-intelligence",
   "private": true,
   "version": "0.1.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "firebase:check": "node scripts/firebase-check.mjs"
   },
   "dependencies": {
+    "firebase": "^10.13.2",
+    "firebase-admin": "^12.4.0",
+    "next": "^14.2.7",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^6.26.2"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@types/react": "^18.3.4",
